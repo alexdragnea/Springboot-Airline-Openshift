@@ -11,4 +11,8 @@ public interface AirlineApi {
     @GetMapping("/{id}")
     AirlineResponse getAirline(@PathVariable Integer id);
 
+    @GetMapping("")
+    AirlineResponse createAirline(AirlineResponse response);
+
+
 }

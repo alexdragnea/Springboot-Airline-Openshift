@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import net.dg.springbootrestapi.model.AirlineResponse;
 import net.dg.springbootrestapi.service.AirlineService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @AllArgsConstructor
@@ -19,6 +16,11 @@ public class AirlineController {
     @GetMapping("/{id}")
     public ResponseEntity<AirlineResponse> getAirlineById(@PathVariable Integer id){
         return ResponseEntity.ok(airlineService.getAirlineById(id));
+    }
+
+    @PostMapping("")
+    public ResponseEntity<AirlineResponse> createAirline(@RequestBody AirlineResponse response){
+        return ResponseEntity.ok(airlineService.createAirline(response));
     }
 
 }

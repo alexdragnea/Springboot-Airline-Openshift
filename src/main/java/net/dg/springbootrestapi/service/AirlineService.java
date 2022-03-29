@@ -11,10 +11,23 @@ import org.springframework.stereotype.Service;
 @Service
 public class AirlineService {
 
-    private final AirlineApi airlineApi;
+  private final AirlineApi airlineApi;
 
-    public AirlineResponse getAirlineById(Integer id){
-        log.info("Inside getAirlineById of AirlineService.");
-        return airlineApi.getAirline(id);
-    }
+  public AirlineResponse getAirlineById(Integer id) {
+    log.info("Inside getAirlineById of AirlineService.");
+    return airlineApi.getAirline(id);
+  }
+
+  public AirlineResponse createAirline(AirlineResponse response) {
+    return AirlineResponse.builder()
+        .id(response.getId())
+        .name(response.getName())
+        .country(response.getCountry())
+        .logo(response.getLogo())
+        .slogan(response.getSlogan())
+        .head_quaters(response.getHead_quaters())
+        .website(response.getWebsite())
+        .established(response.getEstablished())
+        .build();
+  }
 }
