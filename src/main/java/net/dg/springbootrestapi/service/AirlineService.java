@@ -14,11 +14,12 @@ public class AirlineService {
   private final AirlineApi airlineApi;
 
   public AirlineResponse getAirlineById(Integer id) {
-    log.info("Inside getAirlineById of AirlineService.");
+    log.info("Inside getAirlineById method of AirlineService.");
     return airlineApi.getAirline(id);
   }
 
   public AirlineResponse createAirline(AirlineResponse response) {
+    log.info("Inside createAirline method of AirlineService.")
     return AirlineResponse.builder()
         .id(response.getId())
         .name(response.getName())

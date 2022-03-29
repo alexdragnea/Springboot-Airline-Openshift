@@ -16,7 +16,7 @@ public class PassengerService {
     private final PassengerApi passengerApi;
 
     public PassengerResponse getPassengerById(String id){
-        log.info("Inside getPassengerById of AirlineService.");
+        log.info("Inside getPassengerById method of PassengerService.");
         return passengerApi.getPassenger(id);
     }
 }
