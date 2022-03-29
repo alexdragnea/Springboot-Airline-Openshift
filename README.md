@@ -2,7 +2,7 @@
 Demo project using https://instantwebtools.net/fake-rest-api for deploying to Openshift with webhook.
 
 ```
-ab -n 200 https://springboot-airline-app-alexdragnea-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/airline/10 
+ab -n 200 https://example
 ```
 
 #### 200 requests with one pod
