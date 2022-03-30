@@ -2,7 +2,7 @@
 Demo project using https://instantwebtools.net/fake-rest-api for deploying to Openshift with webhook.
 
 
-#### Tutorials i've used: 
+<strong>Tutorials i've used:</strong> 
 1. [Deploying your first Springboot application on Openshift](https://medium.com/fnplus/deploying-your-first-springboot-application-on-openshift-1dd5833aaab9)
 2. [Webhooks with OpenShift](https://redhat-scholars.github.io/openshift-starter-guides/rhs-openshift-starter-guides/4.9/nationalparks-java-codechanges-github.html)
 
