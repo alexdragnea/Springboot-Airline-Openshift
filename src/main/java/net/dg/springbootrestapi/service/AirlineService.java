@@ -19,7 +19,7 @@ public class AirlineService {
   }
 
   public AirlineResponse createAirline(AirlineResponse response) {
-    log.info("Inside createAirline method of AirlineService.")
+    log.info("Inside createAirline method of AirlineService.");
     return AirlineResponse.builder()
         .id(response.getId())
         .name(response.getName())
